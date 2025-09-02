@@ -62,7 +62,7 @@ public class CraftingEditOption implements EditOption{
     @Override
     public InteractAbleWidget getIconGui(int x, int y, int width, int height, Consumer<EditOption> select, Supplier<EditOption> getSelected) {
         return new EditOptionIcon(x, y, width, height, select, getSelected, Miapi.id(
-                "tmcrafting",
+                TMCrafting.MOD_ID,
                 "textures/gui/background.png"),
                 0, 0, 64, 64,
                 "miapi.ui.edit_option.hover.upgrade",
