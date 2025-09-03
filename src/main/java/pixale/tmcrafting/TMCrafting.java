@@ -17,7 +17,7 @@ public class TMCrafting implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		RegistryInventory.EDIT_OPTION_MIAPI_REGISTRY.register(Miapi.id("module_upgrades"),
+		RegistryInventory.EDIT_OPTION_MIAPI_REGISTRY.register(Miapi.id("Crafting"),
 				new CraftingEditOption());
 
 		LOGGER.info("Yo Wassup");

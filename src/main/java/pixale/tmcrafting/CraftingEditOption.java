@@ -49,10 +49,8 @@ public class CraftingEditOption implements EditOption{
     @Environment(EnvType.CLIENT)
     @Override
     public InteractAbleWidget getGui(
-            int x,
-            int y,
-            int width,
-            int height,
+            int x, int y,
+            int width, int height,
             EditContext editContext
     ) {
         return new CraftingTableWidget(x, y, width, height, editContext);
@@ -60,7 +58,11 @@ public class CraftingEditOption implements EditOption{
 
     @Environment(EnvType.CLIENT)
     @Override
-    public InteractAbleWidget getIconGui(int x, int y, int width, int height, Consumer<EditOption> select, Supplier<EditOption> getSelected) {
+    public InteractAbleWidget getIconGui(int x, int y,
+                                         int width, int height,
+                                         Consumer<EditOption> select,
+                                         Supplier<EditOption> getSelected
+    ) {
         return new EditOptionIcon(x, y, width, height, select, getSelected, Miapi.id(
                 TMCrafting.MOD_ID,
                 "textures/gui/background.png"),
